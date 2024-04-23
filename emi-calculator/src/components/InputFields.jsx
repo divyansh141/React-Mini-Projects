@@ -12,6 +12,7 @@ const InputFields = ({ label, min, max, step = 1, value, setValue }) => {
         step={step}
         value={value}
         onChange={(e) => setValue(e.target.value)}
+        disabled={label === "Monthly EMI(Rs.)" ? true : false}
       />
     </div>
   );

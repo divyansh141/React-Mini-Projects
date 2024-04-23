@@ -1,0 +1,62 @@
+body{
+    background-color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    height: 100vh;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.products__single{
+    height: 250px;
+    padding: 40px;
+    background-color: #3e3e3e;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.products__single > img{
+    width: 100%;
+    height: 90%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.pagination{
+    position: sticky;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    padding: 20px;
+    font-size: large;
+}
+
+.selectedPage {
+border-radius: 50%;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 8px dotted white;
+    border-radius: 100%;
+    padding: 50px;
+    animation: ghumna 2s infinite;
+    transform: rotate(0);
+}
+
+@keyframes ghumna {
+    0%{
+        transform: rotate(0);
+    } 100%{
+        transform: rotate(360deg);
+    }
+}

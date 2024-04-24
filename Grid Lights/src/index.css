@@ -1,0 +1,20 @@
+.cell__container{
+  display: grid;
+  gap: 20px;
+  background-color: #333;
+  padding: 50px;
+  border-radius: 16px;
+}
+
+.cell{
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cell__filled{
+  background-color: teal;
+  transition-duration: 300ms;
+}
